@@ -19,15 +19,15 @@ header {
 header p {
    margin: 0;
    position: relative;
-   /*top: 20px;*/
+   top: 10px;
 }
 
 nav {
 
    text-decoration: none;
    border-bottom: 1px solid #dbe4f4;
-   text-align: center;
-   padding: 10px 0;
+   /*text-align: center;*/
+   padding: 15px 0px 15px 550px;
    background-color: #ffffff;
 }
 
@@ -38,20 +38,20 @@ a {
 }
 
 .card {
-   border: 1px solid black;
+   border: 1px solid rgb(255, 255, 255);
    margin: 10px 25px;
    border-radius: 10px;
    max-width: 90%;
    margin: 15px auto;
-   box-shadow: 0px 4px 10px #000000;
+   box-shadow: 0px 4px 10px #b4b4b4;
 }
 
 main {
    align-content: center;
    background-color: #EEF5FF;
    padding: 25px;
-   padding-left: 150px;
-   padding-right: 150px;
+   padding-left: 500px;
+   padding-right: 500px;
 }
 
 main h2 {
@@ -71,7 +71,7 @@ main article {
    border-radius: 10px;
    max-width: 20%;
    margin: 15px auto;
-   color: #000000;  
+   color: #000000;
    padding: 20px;
 }
 
