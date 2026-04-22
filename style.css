@@ -12,7 +12,7 @@ header {
    text-align: center;
    padding: 10px 0;
 
-   
+
 }
 
 header p {
@@ -22,6 +22,10 @@ header p {
 }
 
 nav {
+
+   a {
+      padding: 9px;
+   }
 
    text-decoration: none;
    border-bottom: 1px solid #dbe4f4;
@@ -77,6 +81,11 @@ main article {
 
 main p {
    color: #000000;
-   padding-left: 10px;
+   padding-left: 20px;
    padding-right: 10px;
+}
+
+main h4
+{
+   display: inline-block;
 }
