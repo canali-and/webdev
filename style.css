@@ -13,6 +13,7 @@ header {
    padding: 10px 0;
 
 
+
 }
 
 header p {
@@ -85,18 +86,21 @@ main p {
    padding-right: 10px;
 }
 
-main video
-{
-   padding-left: 25.5px;
-   padding-bottom: 20px;
-
-}    
 footer p{
  color: #ffffff;
    background-image: linear-gradient(to left, #bb7e8c, #d1becf);
    /*border-bottom: 1px solid #c9b6be;*/
    text-align: left;
    padding: 10px 0;
-   margin : 0px;
+   margin: 0px;
 
+}
+
+.flex_container {
+   display: flex;
+}
+
+.flex_container article {
+   flex-wrap: wrap;
+   justify-content: space-between;
 }
