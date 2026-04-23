@@ -51,6 +51,8 @@ main {
    /*padding: 25px;*/
    padding-left: 500px;
    padding-right: 500px;
+   padding-bottom: 50px;
+   padding-top: 50px;
 }
 
 main h2 {
@@ -86,7 +88,7 @@ footer p{
    background-image: linear-gradient(to left, #bb7e8c, #d1becf);
    /*border-bottom: 1px solid #c9b6be;*/
    text-align: left;
-   padding: 10px 0;
+   padding: 5px ;
    margin : 0px;
-
+   text-align: center;
 }
