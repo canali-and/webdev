@@ -28,6 +28,19 @@ nav {
    /*text-align: center;*/
    padding: 15px 0px 15px 550px;
    background-color: #ffffff;
+    display: inline-block; /* Necessario per applicare la trasformazione */
+  transition: transform 0.3s ease; /* Rende l'ingrandimento fluido */
+
+}
+
+nav article:hover {
+  transform: scale(1.2); /* Ingrandisce l'elemento del 20% */
+}
+.menù {
+  display: flex;          /* Attiva il layout a righe */
+  flex-direction: row;    /* Imposta la direzione in orizzontale (default) */
+  gap: 20px;              /* Crea spazio tra i link senza usare margin */
+  justify-content: center; /* Opzionale: centra i link orizzontalmente */
 }
 
 a {
