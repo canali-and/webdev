@@ -11,8 +11,7 @@ header {
    /*border-bottom: 1px solid #c9b6be;*/
    text-align: center;
    padding: 10px 0;
-
-
+   margin: 0;
 }
 
 header p {
@@ -49,6 +48,8 @@ nav article:hover {
    justify-content: center;
    /* Opzionale: centra i link orizzontalmente */
    text-align: center;
+   margin: 0;
+   background-color: white;
 }
 
 a {
@@ -157,3 +158,9 @@ footer p {
 .video-item video {
    width: 100%;
 }
+
+/*.top-bar {
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+}*/
