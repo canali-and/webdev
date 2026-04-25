@@ -13,7 +13,6 @@ header {
    padding: 10px 0;
 
 
-
 }
 
 header p {
@@ -24,15 +23,32 @@ header p {
 
 nav {
 
-   a {
-      padding: 9px;
-   }
-
    text-decoration: none;
    border-bottom: 1px solid #dbe4f4;
    /*text-align: center;*/
-   padding: 15px 0px 15px 550px;
+   padding: 15px 0px 15px 0px;
    background-color: #ffffff;
+   display: inline-block;
+   /* Necessario per applicare la trasformazione */
+   transition: transform 0.3s ease;
+   /* Rende l'ingrandimento fluido */
+}
+
+nav article:hover {
+   transform: scale(1.2);
+   /* Ingrandisce l'elemento del 20% */
+}
+
+.menù {
+   display: flex;
+   /* Attiva il layout a righe */
+   flex-direction: row;
+   /* Imposta la direzione in orizzontale (default) */
+   gap: 20px;
+   /* Crea spazio tra i link senza usare margin */
+   justify-content: center;
+   /* Opzionale: centra i link orizzontalmente */
+   text-align: center;
 }
 
 a {
@@ -54,8 +70,7 @@ main {
    align-content: center;
    background-color: #EEF5FF;
    /*padding: 25px;*/
-   padding-left: 500px;
-   padding-right: 500px;
+   padding: 20px 20%;
 }
 
 main h2 {
@@ -69,14 +84,14 @@ section {
 }
 
 main article {
-   display: inline-block;
+   /*display: inline-block;*/
    border: 1px solid#dbe1ff;
    margin: 10px 25px;
    border-radius: 10px;
-   max-width: 20%;
-   margin: 15px auto;
+   flex: 1 1 200px;
+   margin: 10px;
    color: #000000;
-   padding: 10px;
+   padding: 15px;
    background-color: #FAFBFF;
 }
 
@@ -86,21 +101,59 @@ main p {
    padding-right: 10px;
 }
 
-footer p{
- color: #ffffff;
+footer p {
+   color: #ffffff;
    background-image: linear-gradient(to left, #bb7e8c, #d1becf);
    /*border-bottom: 1px solid #c9b6be;*/
    text-align: left;
    padding: 10px 0;
    margin: 0px;
-
 }
 
-.flex_container {
+.container {
    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   padding: 10px;
 }
 
-.flex_container article {
-   flex-wrap: wrap;
-   justify-content: space-between;
+.item {
+   /*flex-grow: 1;*/
+   margin: 5px;
+   /*flex: 0 0 100px;*/
+}
+
+.immagini {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 15px;
+   padding: 20px;
+}
+
+.immagini img {
+   width: 100%;
+   object-fit: cover;
+   border-radius: 8px;
+}
+
+.immagini img:hover {
+   transform: scale(1.05);
+}
+
+.video-container {
+   display: flex;
+   justify-content: center;
+   gap: 40px;
+   padding: 20px;
+}
+
+.video-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.video-item video {
+   width: 100%;
 }
