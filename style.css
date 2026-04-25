@@ -107,7 +107,7 @@ footer p {
    background-image: linear-gradient(to left, #bb7e8c, #d1becf);
    /*border-bottom: 1px solid #c9b6be;*/
    text-align: left;
-   padding: 10px 0;
+   padding: 10px 0 10px 20px;
    margin: 0px;
 }
 
